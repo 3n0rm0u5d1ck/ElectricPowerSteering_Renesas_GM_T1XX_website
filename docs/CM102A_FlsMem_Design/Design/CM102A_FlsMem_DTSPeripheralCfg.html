@@ -1,0 +1,434 @@
+---
+layout: default
+title: CM102A_FlsMem_DTSPeripheralCfg
+nav_order: 2
+parent: Component Design
+---
+{% raw %}
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title>CM102A_FlsMem_DTSPeripheralCfg</title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="author" content="Patel, Keyur"/>
+	<meta name="created" content="2006-09-16T00:00:00"/>
+	<meta name="changedby" content="Patel, Keyur"/>
+	<meta name="changed" content="2016-01-15T19:08:50"/>
+	<meta name="keywords" content="DTS"/>
+	<meta name="AppVersion" content="14.0300"/>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Calibri"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+	</style>
+	
+</head>
+
+<body>
+<table cellspacing="0" border="0">
+	<colgroup width="68"></colgroup>
+	<colgroup width="102"></colgroup>
+	<colgroup width="176"></colgroup>
+	<colgroup width="98"></colgroup>
+	<colgroup width="63"></colgroup>
+	<colgroup width="339"></colgroup>
+	<colgroup width="61"></colgroup>
+	<colgroup width="73"></colgroup>
+	<colgroup width="297"></colgroup>
+	<tr>
+		<td style="border-bottom: 2px solid #000000" colspan=9 height="21" align="center" valign=bottom><b><font color="#000000">DTS Peripheral Register Configuration (base Address 0xFFFF 0000h)</font></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px double #000000; border-left: 2px solid #000000; border-right: 1px solid #000000" height="21" align="center" valign=bottom><b><i><font color="#000000">DMA Channel</font></i></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px double #000000; border-right: 1px solid #000000" align="center" valign=bottom><b><i><font color="#000000">Configurable</font></i></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px double #000000; border-right: 1px solid #000000" align="center" valign=bottom><b><i><font color="#000000">Offset</font></i></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px double #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><b><i><font color="#000000">Name</font></i></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px double #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><b><i><font color="#000000">Update</font></i></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px double #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><b><i><font color="#000000">Description</font></i></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px double #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><b><i><font color="#000000">Bit #</font></i></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px double #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><b><i><font color="#000000">Set/Clear</font></i></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px double #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="center" valign=bottom><b><i><font color="#000000">Comment</font></i></b></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000" height="22" align="center" valign=bottom><b><i><font color="#000000">DTSx</font></i></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-right: 2px solid #000000" colspan=8 align="center" valign=bottom bgcolor="#FFFF00"><b><i><font color="#000000"><br></font></i></b></td>
+		</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000" rowspan=32 height="664" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" rowspan=32 align="center" valign=middle><font color="#000000">No</font></td>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">8200H + 4h × *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTSnnnCM</font></td>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTS Channel Master Setting</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">22-20</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">1U</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">PEID</font></td>
+	</tr>
+	<tr>
+		<td style="border-left: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">19-18</font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">*4 </font></td>
+		<td style="border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">SPID</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="17" sdnum="1033;"><font color="#000000">17</font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td style="border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">UM - Disable</font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">15-0</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">x</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">CMC</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">9000h + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTSAnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTS Source Address</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">31-0</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">-</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">9004h + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTDAnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTS Destination Address </font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">31-0</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">-</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">9008h + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTTCnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTS transfer Count</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">16-31</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">*</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Address Reload Count</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">0-15</font></td>
+		<td style="border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">*</font></td>
+		<td style="border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Transfer Count</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">900Ch + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTTCTnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTS transfer control</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><font color="#000000">28-31</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle bgcolor="#D9D9D9"><font color="#000000">Rserved</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">27</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">DMA transfer stop when transfer errored</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><font color="#000000">25-26</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle bgcolor="#D9D9D9"><font color="#000000">Reserved</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">18-24</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">nnn+1 </font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Next Channel in Chain</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">16-17</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">1U *3</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Chain Enable: Chain at last Transfer</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">15</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Disable - Transfer count match interrupt </font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">14</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">1 *1 </font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Enable - Transfer Completion interrupt</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><font color="#000000">13</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle bgcolor="#D9D9D9"><font color="#000000">Reserved</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">11-12</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Disable -Reload function 2</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">9-10</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Disable- Reload Function 1</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">7-8</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">2U</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Fixed -Destinable address count direction</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">5-6</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Increment - Source Address count direction</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">2-4</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">2U</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Transfer Data Size - 32 bits</font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">0-1</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">1U</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Block transfer 1 by transfer count</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">9010h + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTRSAnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTS Reload Source Address</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">31-0</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">-</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">9014h + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTRDAnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTS Reload Destination Address </font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">31-0</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">-</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">-</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">9018h + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTRTCnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTS Reload transfer Count</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">16-31</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">-</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Reload Address reload count</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">0-15</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">-</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Reload transfer count</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">901Ch + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTTCCnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTS Transfer Count Compare</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><font color="#000000">31-16</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle bgcolor="#D9D9D9"><font color="#000000">Reserved</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">0-15</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">*</font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Transfer Count Compare</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">9020h + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTFSLnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTSFSL Operation Setting</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">0</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">1U</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle><font color="#000000">Enable - Channel Operation</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">9024h + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTFSTnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTSFSL transfer request status</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><font color="#000000">0</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9"><font color="#000000">-</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle bgcolor="#D9D9D9"><font color="#000000">Status - DMA transfer Request pending</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">9028h + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTFSSnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTSFSL transfer request set</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><font color="#000000">0</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom><font color="#000000">1U *2</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle bgcolor="#D9D9D9"><font color="#000000">DMA Transfer Request Set</font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">902Ch + 40h *[Ch#]</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTFSCnnn</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">Static</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font color="#000000">DTSFSL transfer request clear</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><font color="#000000">0</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9"><font color="#000000">-</font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" align="left" valign=middle bgcolor="#D9D9D9"><font color="#000000">DMA Transfer Request Clear</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><b><font color="#000000">Note 1: </font></b></td>
+		<td align="center" valign=middle><b><font color="#000000"><br></font></b></td>
+		<td align="left" valign=middle><font color="#000000">ZZZ= Dynamic change value, X = Don’t Care, 1=Set, 0=Clear, -=Loaded Data/Configurable Data, unspecified register bits shall have safe default value </font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><b><font color="#000000">Note 2: </font></b></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000">Channel Number, where from nnn = 000 to 031</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="23" align="center" valign=middle><b><font color="#000000">Note 3: </font></b></td>
+		<td align="center" valign=middle><b><font color="#000000"><br></font></b></td>
+		<td align="left" valign=middle><font color="#000000">*1 Transfer Completion Interupt (Only the Second last DTS channel should be configured) ( the last Crc Region Result Transfer Channel)</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="23" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000">*2 set this for 1st channel only after all channel(s) has been configured</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="23" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000">*3 Last One don't enable</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="23" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000">*4 SPID = 2 for Code Flash to Crc &amp; SPID=0 for Crc to Local RAM</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>
+
+{% endraw %}

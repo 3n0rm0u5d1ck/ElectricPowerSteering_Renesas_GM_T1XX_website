@@ -1,0 +1,299 @@
+---
+layout: default
+title: ShutdownSequence
+nav_order: 2
+parent: Implementation
+---
+{% raw %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title></title>
+  <meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+  <meta name="created" content="2016-12-21T18:50:19Z"/>
+  <meta name="changed" content="2016-12-21T18:50:19Z"/>
+</head>
+<body>
+<h1></h1>
+<p>GetShutdownOngoing</p>
+<p>BswM_Restart</p>
+<p>BswM_FinalizeShutdown</p>
+<p>BswM_SHUTDOWN_NvMWriteAll</p>
+<p><b>BSWM Shutdown Sequence</b></p>
+<p><b>Mode Requestor</b></p>
+<p><b>ACTIONS</b></p>
+<p><b>RULE</b></p>
+<p><b>ACTION LIST</b></p>
+<p><b>ACTIONS</b></p>
+<p><b>RULE</b></p>
+<p><b>ACTION LIST</b></p>
+<p><b>ACTIONS</b></p>
+<p>RULE</p>
+<p>ACTION LIST</p>
+<p>ACTIONS</p>
+<p>Soft Reset Request</p>
+<p>BswM_ShtdwnHndlg_PrepShutdown</p>
+<p>BswM_DiagCMgrPwrDwn</p>
+<p>Hard Reset Request</p>
+<p>Shutdown Sequence</p>
+<p>Reprogramming Request</p>
+<p>Switch Off Request</p>
+<p>Request </p>
+<p>Download</p>
+<p>BswM_PrepShutdownStatesDef = PREPSHUTDOWN_REPROGRAM</p>
+<p>BswM_RequestMode</p>
+<p>Rte_SysStMod_SysSt_Val == OFF</p>
+<p>BswM_MainFunction</p>
+<p>BswM_PrepShutdownStatesImm = PREPSHUTDOWN_HARDRESET</p>
+<p>BSWM_PREPSHUTDOWN</p>
+<p>PREPSHUTDOWN</p>
+<p>ChangeMode_PrepShutdown</p>
+<p>BSWM_STATE = BSWM_PREP_SHUTDOWN</p>
+<p>BswM_RequestMode</p>
+<p>Dem_Shutdown</p>
+<p>EcuM_SelectShutdownTarget(ECUM_STATE_RESET, RESET_MCU)</p>
+<p>EcuM_SelectShutdownTarget(ECUM_STATE_OFF, 0)</p>
+<p>EcuM_SelectShutdownTarget(ECUM_STATE_RESET, RESET_MCU)</p>
+<p>BswM_ShutdownStates = GOOFFONE_REPROGRAM</p>
+<p>BswM_RequestMode</p>
+<p>BswM_ShutdownStates = GOOFFONE_SWITCHOFF</p>
+<p>BswM_ShutdownStates = GOOFFONE_HARDRESET</p>
+<p>BswM_RequestMode</p>
+<p>BswM_RequestMode</p>
+<p>BSWM_GOOFFONE</p>
+<p>GOOFFONE</p>
+<p>ChangeMode_GoOffOne</p>
+<p>BSWM_STATE = BSWM_GO_OFF_ONE_A</p>
+<p>BswM_RequestMode</p>
+<p><b>BSWM STATE</b></p>
+<p><b>(Normal Shutdown)</b></p>
+<p>RUN</p>
+<p>PREP</p>
+<p>SHUTDOWN</p>
+<p>GO OFF ONE A</p>
+<p>BswM_PrepShutdownStatesDef = PREPSHUTDOWN_SOFTRESET</p>
+<p>EcuM_SelectShutdownTarget(ECUM_STATE_RESET, RESET_MCU)</p>
+<p>BswM_ShutdownStates = GOOFFONE_SOFTRESET</p>
+<p>BswM_RequestMode</p>
+<p>BSWM_RESTART</p>
+<p>RESTART</p>
+<p>DiagcMgrPwrDwn_Oper()</p>
+<p>DiagcMgrPwrDwn_Oper()</p>
+<p>DiagcMgrPwrDwn_Oper()</p>
+<p>Dem_Init</p>
+<p><b>BSWM STATE</b></p>
+<p><b>(Restart)</b></p>
+<p>RUN</p>
+<p>PREP</p>
+<p>SHUTDOWN</p>
+<p>GO OFF ONE A</p>
+<p>RESTART</p>
+<p>RUN</p>
+<p>NvM_WriteAll()</p>
+<p>Is (Request still ONGOING)?</p>
+<p>NvM_Mainfunction()</p>
+<p>Fee_Mainfunction()</p>
+<p>Fls_Mainfunction()</p>
+<p><i>Get Request status</i></p>
+<p>NvM_GetErrorStatus</p>
+<p>Yes</p>
+<p>End</p>
+<p>No</p>
+<p>NvM_WriteAll()</p>
+<p>Is (Request still ONGOING)?</p>
+<p>NvM_Mainfunction()</p>
+<p>Fee_Mainfunction()</p>
+<p>Fls_Mainfunction()</p>
+<p><i>Get Request status</i></p>
+<p>NvM_GetErrorStatus</p>
+<p>Yes</p>
+<p>End</p>
+<p>No</p>
+<p>Reprogramming request flag is cleared from Backup RAM</p>
+<p>FLSPROGMREQ cleared for BRAMDAT1 </p>
+<p>EcuM_ClearValidatedWakeupEvent(0x2)</p>
+<p>EcuM_GoDown(FlexUser_BswM)</p>
+<p>End</p>
+<p>Stop CAN Communication (TBD)</p>
+<p>Is BswM_ShutdownState != RESTART</p>
+<p>Yes</p>
+<p>Reprogramming request flag is cleared from Backup RAM</p>
+<p>FLSPROGMREQ cleared for BRAMDAT1 </p>
+<p>EcuM_ClearValidatedWakeupEvent(0x2)</p>
+<p>EcuM_GoDown(FlexUser_BswM)</p>
+<p>End</p>
+<p>No</p>
+<p>Reprogramming request flag is cleared from Backup RAM</p>
+<p>FLSPROGMREQ cleared for BRAMDAT1 </p>
+<p>Stop CAN Communication</p>
+<p>Write Close Check Block() with value 0x00FF00FF</p>
+<p>Has WriteAll completed Successfully?</p>
+<p>If(BswM_WrAllFaild_Uls_M_u8 == 0x55?</p>
+<p>Write Close Check Block() with value 0xFFAAFF55</p>
+<p>No</p>
+<p>Yes</p>
+<p>EcuM_ClearValidatedWakeupEvent(0x2)</p>
+<p>EcuM_GoDown(FlexUser_BswM)</p>
+<p>End</p>
+<p>Stop CAN Communication</p>
+<p>Write Close Check Block() with value 0x00FF00FF</p>
+<p>Has WriteAll completed Successfully?</p>
+<p>If(BswM_WrAllFaild_Uls_M_u8 == 0x55?</p>
+<p>Write Close Check Block() with value 0xFFAAFF55</p>
+<p>No</p>
+<p>Yes</p>
+<p>EcuM_ClearValidatedWakeupEvent(0x2)</p>
+<p>EcuM_GoDown(FlexUser_BswM)</p>
+<p>End</p>
+<p>Stop CAN Communication</p>
+<p>Write Close Check Block() with value 0x00FF00FF</p>
+<p>Has WriteAll completed Successfully?</p>
+<p>If(BswM_WrAllFaild_Uls_M_u8 == 0x55?</p>
+<p>Write Close Check Block() with value 0xFFAAFF55</p>
+<p>No</p>
+<p>Yes</p>
+<p>Update Ignition counter and MEC counter</p>
+<p>CallNonTrustedFunction(NtWrapS_CmnMfgSrvInit, NULL_PTR)</p>
+<p>Activate all supervised Entities</p>
+<p>Release Resource to enable execution of all tasks</p>
+<p>Call_BswM_ReleaseResource()</p>
+<p>BSWM_STATE = BSWM_RUN</p>
+<p>Using Font Awesome for the icon for </p>
+<p>Get Resource to disable execution of all tasks</p>
+<p>Call_BswM_GetResource()</p>
+<p>Deactivate all supervised Entities</p>
+<p>Get Resource to disable execution of all tasks</p>
+<p>Call_BswM_GetResource()</p>
+<p>Get Resource to disable execution of all tasks</p>
+<p>Call_BswM_GetResource()</p>
+<p>Call NvMProxy function to set the RAM Block Status of those NvM blocks whose RAM Block status is made to “Changed” in the Init runnable</p>
+<p>Using Font Awesome for the icon for </p>
+<p>Deactivate all supervised Entities</p>
+<p>Get Resource to disable execution of all tasks</p>
+<p>Call_BswM_GetResource()</p>
+<p>Deferred</p>
+<p>Deferred</p>
+<p>Deferred</p>
+<p>Forced Immediate</p>
+<p>Immediate</p>
+<p>Immediate</p>
+<p>Immediate</p>
+<p>Forced Immediate</p>
+<p>Deferred</p>
+<p>Immediate</p>
+<p>Forced Immediate</p>
+<p>NvM_WriteAll()</p>
+<p>Is (Request still ONGOING) and (BswM_RstrtReq == NONE)?</p>
+<p>NvM_Mainfunction()</p>
+<p>Fee_Mainfunction()</p>
+<p>Fls_Mainfunction()</p>
+<p><i>Get Request status</i></p>
+<p>NvM_GetErrorStatus</p>
+<p>Yes</p>
+<p>Get Ignition status</p>
+<p>IoHwAb_GetGpioMcuEna_Oper</p>
+<p>Is Ignition turned ON?</p>
+<p>No</p>
+<p>NvM_KillWriteAll</p>
+<p>Yes</p>
+<p>BswM_RequestMode</p>
+<p>No</p>
+<p>BswMState = RESTART</p>
+<p>BswM_RstrtReq = NONE</p>
+<p>BswM_WrAllFaild_Uls_M_u8 = 0x55</p>
+<p>Cancel WriteAll request</p>
+<p>NvM_CancelWriteAll()</p>
+<p>NvM_Mainfunction()</p>
+<p>Fee_Mainfunction()</p>
+<p>Fls_Mainfunction()</p>
+<p><i>Get Request status</i></p>
+<p>NvM_GetErrorStatus</p>
+<p><i>Get current Time</i></p>
+<p>GetRefTmr100MicroSec32bit_Oper(&amp;WrCncl_Cnt_T_u32)</p>
+<p><i>Get elapsed time</i></p>
+<p>GetTiSpan100MicroSec32bit_Oper(WrCncl_Cnt_T_u32, &amp;WrCnclDurn_Cnt_T_u32)</p>
+<p>Is (Request still ONGOING) and (elapsed time within desired limit)?</p>
+<p>Yes</p>
+<p>Is WriteAll result still pending?</p>
+<p>Yes</p>
+<p>Yes</p>
+<p>BswM_RstrtReq = RESTART</p>
+<p>Disable Sector Switch operation</p>
+<p>Fee_DisableFss()</p>
+<p>Is (Request result == NOT_OK) and (BswM_RstrtReq == NONE)?</p>
+<p>BswM_WrAllFaild_Uls_M_u8 = 0xAAU</p>
+<p>Yes</p>
+<p>No</p>
+<p>Enable Sector Switch operation</p>
+<p>Fee_EnableFss()</p>
+<p>EotLrngNvRamSts_Uls_M_u8 =  NVM RAM block “Changed” status of EOT Lrng block</p>
+<p>Forced Immediate</p>
+<p>Call to Disable FSS will stop any foreground sector swap that is in progress at the time of the CancelWriteAll request.</p>
+<h1 style="page-break-before:always; "></h1>
+<p>EcuM_GoDown</p>
+<p>EcuM_OnGoOffOne: Rte_Stop()</p>
+<p>EcuM_ShutdownOS: ActivateTask(Task_Shutdown_Appl0)</p>
+<p>EcuM_OnGoOffTwo()</p>
+<p>This function is not expected to return.  It will trigger an endless while loop within which the ECU will be either reset via NxtrSwRst or showdown by bringing the TOD pin LOW.</p>
+<p>EcuM_OnGoOffOne is a callout function, but because we only call Rte_Stop from the callout it was condensed here for simplicity.</p>
+<p>EcuM_ShutdownOS is a callout function, but because we only activate the shutdown task from the callout it was condensed here for simplicity.</p>
+<p>ShutdownOS is called from the special Shutdown Task which is mapped to application 0.  This is because Vector suggested that ShutdownOS be called from a trusted application and application 0 is trusted.  Activation of this task will cause the OS to be shutdown and no further tasks to be executed.</p>
+<h1 style="page-break-before:always; "></h1>
+<p>EcuM_OnGoOffTwo</p>
+<p>Ignition On?</p>
+<p>IoHwAb_SetGpioPwrTurnOffCtrl_Oper(STD_LOW)</p>
+<p>No</p>
+<p>NxtrSwRst(MCUDIAGC_FLSPROGMREQ, BRAMDAT1)</p>
+<p>BswM Shutdown State == REPROGRAM?</p>
+<p>Yes</p>
+<p>Yes</p>
+<p>BswM Shutdown State == SOFTRESET?</p>
+<p>BswM Shutdown State == HARDRESET?</p>
+<p>NxtrSwRst(MCUDIAGC_SOFTRST, 0U)</p>
+<p>NxtrSwRst(MCUDIAGC_HARDRST, 0U)</p>
+<p>NxtrSwRst(MCUDIAGC_PWRONRST, 0U)</p>
+<p>No</p>
+<p>No</p>
+<p>No</p>
+<p>Yes</p>
+<p>Yes</p>
+<p>Use of an endless while() loop will cover for situation where ignition possibly switches on before TOD goes low which would then trigger a reset rather than getting stuck.</p>
+<p>BRAMDAT1 is pre-populated with the length provided in the service 34 request and is needed by the bootloader.  It’s value must be retained when issuing the reset.</p>
+<p>This will be the case in the event of a quick ignition cycle as BswM shutdown state will indicate SWITCHOFF even though ignition is back on now.  A power on reset was selected over hard/soft resets to avoid sending positive service response on init. </p>
+<h1 style="page-break-before:always; "></h1>
+<p>STARTUP_TWO_A</p>
+<p>RUN</p>
+<p>PREP_SHUTDOWN</p>
+<p>BswM_Init</p>
+<p>End of ECU Initialization</p>
+<p>Reprogram Request/</p>
+<p>Switch Off request from State and Mode Component/ </p>
+<p>Hard Reset request from Diagnostics/ </p>
+<p>Soft Reset request from Diagnostics/ </p>
+<p>GO_OFF_ONE_A</p>
+<p>Completion of DEM and DiagMgr DeInitialization</p>
+<p>RESTART</p>
+<p>If Ignition Line goes high</p>
+<p>On Completion of ReInitialization</p>
+<h1 style="page-break-before:always; "></h1>
+<p>STARTUP</p>
+<p>EcuM_Init</p>
+<p>STARTUP_ONE</p>
+<p>After Initialization of </p>
+<p>Non-PB Modules</p>
+<p>STARTUP_TWO</p>
+<p>RUN</p>
+<p>GO_OFF_ONE</p>
+<p>OS Start</p>
+<p>Completion of SchM and </p>
+<p>BswM Initialization</p>
+<p>On call of EcuM_GoDown</p>
+<p>GO_OFF_TWO</p>
+<p>After OS Shutdown. </p>
+<p>On call of EcuM_Shutdown</p>
+</body>
+</html>
+{% endraw %}

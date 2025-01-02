@@ -1,0 +1,314 @@
+---
+layout: default
+title: ES008A Input_Output Matrix
+nav_order: 1
+parent: Component Design
+---
+{% raw %}
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="author" content="Duvendack, Frank"/>
+	<meta name="created" content="2016-08-18T13:00:24"/>
+	<meta name="changedby" content="Jason Erlenbeck"/>
+	<meta name="changed" content="2016-09-10T13:40:47"/>
+	<meta name="AppVersion" content="14.0300"/>
+	<meta name="Company" content="Nexteer Automotive"/>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Calibri"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+	</style>
+	
+</head>
+
+<body>
+<table cellspacing="0" border="0">
+	<colgroup width="178"></colgroup>
+	<colgroup width="72"></colgroup>
+	<colgroup width="25"></colgroup>
+	<colgroup width="147"></colgroup>
+	<colgroup width="86"></colgroup>
+	<colgroup span="2" width="91"></colgroup>
+	<colgroup span="3" width="140"></colgroup>
+	<colgroup span="2" width="114"></colgroup>
+	<colgroup span="2" width="67"></colgroup>
+	<tr>
+		<td height="19" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"> </font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="23" align="left" valign=bottom sdnum="1033;0;@"><b><font color="#000000">Component Number:</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=bottom sdnum="1033;0;@"><a class="comment-indicator"></a>
+		<comment>Insert FDD number of Component here.
+Format: XXyyyZ
+
+example: 
+</comment>
+		<font color="#000000">ES008A</font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="23" align="left" valign=bottom sdnum="1033;0;@"><b><font color="#000000">Component Long Name:</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">Power Supply</font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="23" align="left" valign=bottom sdnum="1033;0;@"><b><font color="#000000">Component Short Name:</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">PwrSply</font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="23" align="left" valign=bottom sdnum="1033;0;@"><b><font color="#000000">Component Version:</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">1.4.0</font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="23" align="left" valign=bottom sdnum="1033;0;@"><b><font color="#000000">Review Date:</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">9/10/2016</font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="23" align="left" valign=bottom sdnum="1033;0;@"><b><font color="#000000">Matrix Template Version:</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=3 align="center" valign=bottom sdnum="1033;0;@"><font color="#000000">001</font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font face="Arial" color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font face="Arial" color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=10 align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><b><font face="Arial" color="#000000">Outputs</font></b></td>
+		</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font face="Arial" color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><b><font face="Arial" color="#000000">Signal Name</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">NPwrOnRst </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">Phy1Pt3Volt </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">Phy3Pt3Volt </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">Phy5VoltNotProtd1 </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">Phy5VoltNotProtd2 </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">Phy5VoltNotProtd3 </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">Phy5VoltProtd1 </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">Phy5VoltProtd2 </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top sdnum="1033;0;@"><font face="Arial" color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle bgcolor="#D9D9D9" sdnum="1033;0;@"><b><font face="Arial" color="#000000">Inputs</font></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">PhyElecPwrSteerEna </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#FCD5B5"><font color="#000000">High</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#FCD5B5"><font color="#000000">High</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#FCD5B5"><font color="#000000">High</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#FCD5B5"><font color="#000000">High</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#FCD5B5"><font color="#000000">High</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#FCD5B5"><font color="#000000">High</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#FCD5B5"><font color="#000000">High</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font face="Arial" color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">PhyTurnOffDly </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font face="Arial" color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000">SysSt </font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#FCD5B5"><font color="#000000">High</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom bgcolor="#D9D9D9"><font color="#808080">No Affect</font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=bottom sdnum="1033;0;@"><font face="Arial" color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000" rowspan=3 align="left" valign=top sdnum="1033;0;@"><b><font color="#000000">Notes:</font></b></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" colspan=8 rowspan=3 align="left" valign=top sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="left" valign=bottom sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td style="border-top: 2px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 2px solid #000000" colspan=9 align="center" valign=bottom bgcolor="#D9D9D9" sdnum="1033;0;@"><b><font color="#000000">Legend</font></b></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="66" align="left" valign=middle sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000" align="left" valign=middle bgcolor="#FCD5B5" sdnum="1033;0;@"><b><u><font face="Arial" color="#222222">High:</font></u></b></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" colspan=8 align="left" valign=middle sdnum="1033;0;@"><font color="#000000">Output is off by a major value, such as incorrect sign, incorrect Boolean, or value is drastically impacting the output. Other reasons to mark as &quot;High&quot; are if the value is safety critical, unknown impact to a output.</font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="66" align="left" valign=middle sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000" align="left" valign=middle bgcolor="#FFFF99" sdnum="1033;0;@"><b><u><font face="Arial">Low:</font></u></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" colspan=8 align="left" valign=middle sdnum="1033;0;@"><font color="#000000">Value is off by a minor value that will have no affect to the functionality of component/subfunction it belongs to. Minor value is up to discretion of FDD owner (example would be if hand-wheel torque value with resolution of 0.01 is off by 0.02 where hand-wheel torque is not noticeable at that value.)</font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="66" align="left" valign=middle sdnum="1033;0;@"><font color="#000000"><br></font></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000" align="left" valign=middle bgcolor="#D9D9D9" sdnum="1033;0;@"><b><u><font face="Arial" color="#808080">No Affect:</font></u></b></td>
+		<td style="border-top: 1px solid #000000; border-bottom: 2px solid #000000; border-left: 1px solid #000000; border-right: 2px solid #000000" colspan=8 align="left" valign=middle sdnum="1033;0;@"><font color="#000000">Input does not affect the output in any way.</font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+		<td align="left" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>
+
+{% endraw %}

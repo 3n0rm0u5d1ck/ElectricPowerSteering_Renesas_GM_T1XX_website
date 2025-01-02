@@ -1,0 +1,1733 @@
+---
+layout: default
+title: CM460A_Tauj1CfgAndUse_RegisterConfiguration
+nav_order: 1
+parent: Component Design
+---
+{% raw %}
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="author" content="Jason Erlenbeck"/>
+	<meta name="created" content="2015-06-23T17:39:21"/>
+	<meta name="changedby" content="Jason Erlenbeck"/>
+	<meta name="changed" content="2015-08-13T14:35:09"/>
+	<meta name="AppVersion" content="14.0300"/>
+	<meta name="Company" content="Nexteer"/>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Calibri"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+	</style>
+	
+</head>
+
+<body>
+<hr>
+	<p><center>
+		<h1>Overview</h1>
+		<A HREF="#table0">Assignments</A><br>
+		<A HREF="#table1">Config</A><br>
+		<A HREF="#table2">All Registers</A><br>
+		
+	</center></p>
+<hr>
+<A NAME="table0"><h1>Sheet 1: <em>Assignments</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="100"></colgroup>
+	<colgroup width="163"></colgroup>
+	<colgroup width="117"></colgroup>
+	<colgroup span="11" width="64"></colgroup>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td style="border-bottom: 3px solid #4f81bd" height="27" align="center" valign=bottom><b><font size=4 color="#1F497D">Channel</font></b></td>
+		<td style="border-bottom: 3px solid #4f81bd" align="center" valign=bottom><b><font size=4 color="#1F497D">Assignment</font></b></td>
+		<td style="border-bottom: 3px solid #4f81bd" align="center" valign=bottom><b><font size=4 color="#1F497D">Clock Source</font></b></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td colspan=10 rowspan=29 align="left" valign=bottom><font color="#000000"><br><img src="CM460A_Tauj1CfgAndUse_RegisterConfiguration_html_85c9530b59a1e8a3.png" width=634 height=548 hspace=8 vspace=20>
+		</font></td>
+		</tr>
+	<tr>
+		<td height="20" align="center" valign=bottom sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=bottom><font color="#000000">Phase D</font></td>
+		<td align="center" valign=bottom><font color="#000000">CK0</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=bottom><font color="#000000">Phase E</font></td>
+		<td align="center" valign=bottom><font color="#000000">CK0</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom sdval="2" sdnum="1033;"><font color="#000000">2</font></td>
+		<td align="center" valign=bottom><font color="#000000">Phase F</font></td>
+		<td align="center" valign=bottom><font color="#000000">CK0</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom sdval="3" sdnum="1033;"><font color="#000000">3</font></td>
+		<td align="center" valign=bottom><font color="#000000">AR102 - Timer Library</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+	<tr>
+		<td height="19" align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table1"><h1>Sheet 2: <em>Config</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="175"></colgroup>
+	<colgroup width="118"></colgroup>
+	<colgroup width="182"></colgroup>
+	<colgroup width="116"></colgroup>
+	<colgroup width="411"></colgroup>
+	<colgroup width="244"></colgroup>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Register Group</font></td>
+		<td align="left" valign=bottom><font color="#000000">Register</font></td>
+		<td align="left" valign=bottom><font color="#000000">Register/Field</font></td>
+		<td align="center" valign=bottom><font color="#000000">Setting</font></td>
+		<td align="left" valign=bottom><font color="#000000">Description</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Write Constraints</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Clock Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1PRS0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TPS.BIT.PRS0</font></td>
+		<td align="center" valign=bottom><font color="#000000">000</font></td>
+		<td align="left" valign=bottom><font color="#000000">PreClock = PCLK/1</font></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><font color="#000000">Must be written at the field level</font></td>
+	</tr>
+	<tr>
+		<td height="57" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CMUR0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMUR0.UINT8</font></td>
+		<td align="center" valign=bottom><font color="#000000">11</font></td>
+		<td align="left" valign=bottom><font color="#000000">Detection of falling and rising edges (selection of high width<br>measurement</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TIS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMUR0.BIT.TIS</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">unused field register</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="57" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CMUR1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMUR1.UINT8</font></td>
+		<td align="center" valign=bottom><font color="#000000">11</font></td>
+		<td align="left" valign=bottom><font color="#000000">Detection of falling and rising edges (selection of high width<br>measurement</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="38" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CMUR2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMUR2.UINT8</font></td>
+		<td align="center" valign=bottom><font color="#000000">11</font></td>
+		<td align="left" valign=bottom><font color="#000000">Detection of falling and rising edges (selection of high width<br>measurement</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CMOR0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR0.UINT16</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Detailed at field level</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1MD</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR0.BIT.MD</font></td>
+		<td align="center" valign=bottom><font color="#000000">11010</font></td>
+		<td align="left" valign=bottom><font color="#000000">Capture and gate count mode</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1COS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR0.BIT.COS</font></td>
+		<td align="center" valign=bottom><font color="#000000">01</font></td>
+		<td align="left" valign=bottom><font color="#000000">Sets when CDR and OVF registers are updated, don't care for this application</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="57" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1STS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR0.BIT.STS</font></td>
+		<td align="center" valign=bottom><font color="#000000">010</font></td>
+		<td align="left" valign=bottom><font color="#000000">Valid edge of TAUJnTTINm input signal is used as<br>a start trigger and the reverse edge as a stop<br>trigger.</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1MAS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR0.BIT.MAS</font></td>
+		<td align="center" valign=bottom><font color="#000000">0</font></td>
+		<td align="left" valign=bottom><font color="#000000">Set channel as slave - not really applicable for use case</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CCS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR0.BIT.CCS</font></td>
+		<td align="center" valign=bottom><font color="#000000">00</font></td>
+		<td align="left" valign=bottom><font color="#000000">every other setting is prohibited</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CKS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR0.BIT.CKS</font></td>
+		<td align="center" valign=bottom><font color="#000000">00</font></td>
+		<td align="left" valign=bottom><font color="#000000">Select CK0 for all channels</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CMOR1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR1.UINT16</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Detailed at field level</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1MD</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR1.BIT.MD</font></td>
+		<td align="center" valign=bottom><font color="#000000">11010</font></td>
+		<td align="left" valign=bottom><font color="#000000">Capture and gate count mode</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1COS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR1.BIT.COS</font></td>
+		<td align="center" valign=bottom><font color="#000000">01</font></td>
+		<td align="left" valign=bottom><font color="#000000">Sets when CDR and OVF registers are updated, don't care for this application</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="57" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1STS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR1.BIT.STS</font></td>
+		<td align="center" valign=bottom><font color="#000000">010</font></td>
+		<td align="left" valign=bottom><font color="#000000">Valid edge of TAUJnTTINm input signal is used as<br>a start trigger and the reverse edge as a stop<br>trigger.</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1MAS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR1.BIT.MAS</font></td>
+		<td align="center" valign=bottom><font color="#000000">0</font></td>
+		<td align="left" valign=bottom><font color="#000000">Set channel as slave - not really applicable for use case</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CCS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR1.BIT.CCS</font></td>
+		<td align="center" valign=bottom><font color="#000000">00</font></td>
+		<td align="left" valign=bottom><font color="#000000">every other setting is prohibited</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CKS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR1.BIT.CKS</font></td>
+		<td align="center" valign=bottom><font color="#000000">00</font></td>
+		<td align="left" valign=bottom><font color="#000000">Select CK0 for all channels</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CMOR2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR2.UINT16</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Don't care, channel not used</font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1MD</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR2.BIT.MD</font></td>
+		<td align="center" valign=bottom><font color="#000000">11010</font></td>
+		<td align="left" valign=bottom><font color="#000000">Capture and gate count mode</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1COS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR2.BIT.COS</font></td>
+		<td align="center" valign=bottom><font color="#000000">01</font></td>
+		<td align="left" valign=bottom><font color="#000000">Sets when CDR and OVF registers are updated, don't care for this application</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="57" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1STS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR2.BIT.STS</font></td>
+		<td align="center" valign=bottom><font color="#000000">010</font></td>
+		<td align="left" valign=bottom><font color="#000000">Valid edge of TAUJnTTINm input signal is used as<br>a start trigger and the reverse edge as a stop<br>trigger.</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1MAS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR2.BIT.MAS</font></td>
+		<td align="center" valign=bottom><font color="#000000">0</font></td>
+		<td align="left" valign=bottom><font color="#000000">Set channel as slave - not really applicable for use case</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CCS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR2.BIT.CCS</font></td>
+		<td align="center" valign=bottom><font color="#000000">00</font></td>
+		<td align="left" valign=bottom><font color="#000000">every other setting is prohibited</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CKS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR2.BIT.CKS</font></td>
+		<td align="center" valign=bottom><font color="#000000">00</font></td>
+		<td align="left" valign=bottom><font color="#000000">Select CK0 for all channels</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can  be written at field or register level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TS00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TS.BIT.TS00</font></td>
+		<td align="center" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="left" valign=bottom><font color="#000000">Enables Timer 0</font></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><font color="#000000">Must be written at the field level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TS01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TS.BIT.TS01</font></td>
+		<td align="center" valign=bottom sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="left" valign=bottom><font color="#000000">Enables Timer 1</font></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><font color="#000000">Must be written at the field level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TS02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TS.BIT.TS02</font></td>
+		<td align="center" valign=bottom bgcolor="#FFFF00" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="left" valign=bottom><font color="#000000">Enables Timer 2</font></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><font color="#000000">Must be written at the field level</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><i><font color="#7F7F7F">Not Written To/Read From During Init</font></i></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CDR0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CDR0</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Compare register, not used - read directly from count register</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can be left at default value</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CDR1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CDR1</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Compare register, not used - read directly from count register</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can be left at default value</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CDR2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CDR2</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Don't care, channel not used</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can be left at default value</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CNT0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CNT0</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read by model</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CNT1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CNT1</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read by model</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CNT2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CNT2</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read by model</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CSR0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSR0.UINT8</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused feature</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1OVF</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSR0.BIT.OVF</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused feature</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CSR1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSR1.UINT8</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused feature</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CSR2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSR2.UINT8</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused feature</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CSC0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSC0.UINT8</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused feature, overflow is expected as part of normal operation</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can be left at default value</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CLOV</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSC0.BIT.CLOV</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused feature, overflow is expected as part of normal operation</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can be left at default value</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CSC1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSC1.UINT8</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused feature, overflow is expected as part of normal operation</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can be left at default value</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CSC2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSC2.UINT8</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused feature, overflow is expected as part of normal operation</font></td>
+		<td align="left" valign=bottom><font color="#000000">Can be left at default value</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TE00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TE.BIT.TE00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused register</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TE01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TE.BIT.TE01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused register</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TE02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TE.BIT.TE02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused register</font></td>
+		<td align="left" valign=bottom><font color="#000000">Read Only</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TT00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TT.BIT.TT00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused register, timer is never stopped</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TT01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TT.BIT.TT01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused register, timer is never stopped</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TT02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TT.BIT.TT02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Unused register, timer is never stopped</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOE00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOE.BIT.TOE00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOE01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOE.BIT.TOE01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOE02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOE.BIT.TOE02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TO00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TO.BIT.TO00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TO01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TO.BIT.TO01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TO02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TO.BIT.TO02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOM00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOM.BIT.TOM00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOM01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOM.BIT.TOM01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOM02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOM.BIT.TOM02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOC00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOC.BIT.TOC00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOC01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOC.BIT.TOC01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOC02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOC.BIT.TOC02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOL00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOL.BIT.TOL00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOL01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOL.BIT.TOL01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOL02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOL.BIT.TOL02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, used to configure output channel characteristics</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDE00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDE.BIT.RDE00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDE01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDE.BIT.RDE01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDE02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDE.BIT.RDE02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDM00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDM.BIT.RDM00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDM01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDM.BIT.RDM01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDM02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDM.BIT.RDM02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDT00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDT.BIT.RDT00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDT01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDT.BIT.RDT01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDT02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDT.BIT.RDT02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RSF00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RSF.BIT.RSF00</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RSF01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RSF.BIT.RSF01</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RSF02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RSF.BIT.RSF02</font></td>
+		<td align="center" valign=bottom><font color="#000000">--</font></td>
+		<td align="left" valign=bottom><font color="#000000">Not used, would be important for output uses</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><i><font color="#7F7F7F">Parts of Tauj1 shared with AR102</font></i></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="center" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+		<td align="left" valign=bottom><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Clock Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TPS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TPS.UINT16</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Clock Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1PRS1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TPS.BIT.PRS1</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Clock Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1PRS2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TPS.BIT.PRS2</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Clock Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1PRS3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TPS.BIT.PRS3</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Clock Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1BRS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.BRS</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CDR3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CDR3</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CMUR3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMUR3.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CMOR3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR3.UINT16</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1MD</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR3.BIT.MD</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1COS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR3.BIT.COS</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1STS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR3.BIT.STS</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1MAS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR3.BIT.MAS</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CCS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR3.BIT.CCS</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CKS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CMOR3.BIT.CKS</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CNT3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CNT3</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TT</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TT.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TT03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TT.BIT.TT03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TS.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TS03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TS.BIT.TS03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CSC3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSC3.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TE</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TE.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TE03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TE.BIT.TE03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Control</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1CSR3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.CSR3.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDT</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDT.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDT03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDT.BIT.RDT03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RSF</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RSF.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RSF03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RSF.BIT.RSF03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDM</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDM.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDM03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDM.BIT.RDM03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDE</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDE.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Reload Data</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1RDE03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.RDE.BIT.RDE03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOC</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOC.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOC03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOC.BIT.TOC03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOL</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOL.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOL03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOL.BIT.TOL03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOE</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOE.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOE03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOE.BIT.TOE03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TO</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TO.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TO03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TO.BIT.TO03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOM</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOM.UINT8</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Register fields shared with AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">Output Channel Config</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1TOM03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ1.TOM.BIT.TOM03</font></td>
+		<td align="center" valign=bottom bgcolor="#FF0000"><font color="#000000">--</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Owned by AR102A</font></td>
+		<td align="left" valign=bottom bgcolor="#FF0000"><font color="#000000">Do Not Write To</font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+<hr>
+<A NAME="table2"><h1>Sheet 3: <em>All Registers</em></h1></A>
+<table cellspacing="0" border="0">
+	<colgroup width="53"></colgroup>
+	<colgroup width="91"></colgroup>
+	<colgroup width="153"></colgroup>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CDR0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CDR0</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CDR1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CDR1</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CDR2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CDR2</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CDR3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CDR3</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CNT0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CNT0</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CNT1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CNT1</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CNT2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CNT2</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CNT3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CNT3</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CMUR0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMUR0.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TIS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMUR0.BIT.TIS</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CMUR1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMUR1.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CMUR2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMUR2.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CMUR3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMUR3.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CSR0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSR0.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0OVF</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSR0.BIT.OVF</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CSR1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSR1.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CSR2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSR2.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CSR3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSR3.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CSC0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSC0.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CLOV</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSC0.BIT.CLOV</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CSC1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSC1.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CSC2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSC2.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CSC3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CSC3.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TE</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TE.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TE00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TE.BIT.TE00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TE01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TE.BIT.TE01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TE02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TE.BIT.TE02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TE03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TE.BIT.TE03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TS.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TS00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TS.BIT.TS00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TS01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TS.BIT.TS01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TS02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TS.BIT.TS02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TS03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TS.BIT.TS03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TT</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TT.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TT00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TT.BIT.TT00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TT01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TT.BIT.TT01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TT02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TT.BIT.TT02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TT03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TT.BIT.TT03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TO</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TO.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TO00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TO.BIT.TO00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TO01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TO.BIT.TO01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TO02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TO.BIT.TO02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TO03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TO.BIT.TO03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOE</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOE.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOE00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOE.BIT.TOE00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOE01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOE.BIT.TOE01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOE02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOE.BIT.TOE02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOE03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOE.BIT.TOE03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOL</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOL.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOL00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOL.BIT.TOL00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOL01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOL.BIT.TOL01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOL02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOL.BIT.TOL02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOL03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOL.BIT.TOL03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDT</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDT.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDT00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDT.BIT.RDT00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDT01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDT.BIT.RDT01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDT02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDT.BIT.RDT02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDT03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDT.BIT.RDT03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RSF</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RSF.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RSF00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RSF.BIT.RSF00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RSF01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RSF.BIT.RSF01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RSF02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RSF.BIT.RSF02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RSF03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RSF.BIT.RSF03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CMOR0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR0.UINT16</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0MD</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR0.BIT.MD</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0COS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR0.BIT.COS</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0STS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR0.BIT.STS</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0MAS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR0.BIT.MAS</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CCS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR0.BIT.CCS</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CKS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR0.BIT.CKS</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CMOR1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR1.UINT16</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CMOR2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR2.UINT16</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0CMOR3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.CMOR3.UINT16</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TPS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TPS.UINT16</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0PRS0</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TPS.BIT.PRS0</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0PRS1</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TPS.BIT.PRS1</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0PRS2</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TPS.BIT.PRS2</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0PRS3</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TPS.BIT.PRS3</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0BRS</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.BRS</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOM</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOM.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOM00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOM.BIT.TOM00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOM01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOM.BIT.TOM01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOM02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOM.BIT.TOM02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOM03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOM.BIT.TOM03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOC</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOC.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOC00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOC.BIT.TOC00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOC01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOC.BIT.TOC01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOC02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOC.BIT.TOC02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0TOC03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.TOC.BIT.TOC03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDE</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDE.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDE00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDE.BIT.RDE00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDE01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDE.BIT.RDE01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDE02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDE.BIT.RDE02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDE03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDE.BIT.RDE03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDM</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDM.UINT8</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDM00</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDM.BIT.RDM00</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDM01</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDM.BIT.RDM01</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDM02</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDM.BIT.RDM02</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDM03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDM.BIT.RDM03</font></td>
+	</tr>
+	<tr>
+		<td height="19" align="left" valign=bottom><font color="#000000">#define</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0RDM03</font></td>
+		<td align="left" valign=bottom><font color="#000000">TAUJ0.RDM.BIT.RDM03</font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>
+
+{% endraw %}

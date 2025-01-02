@@ -1,0 +1,778 @@
+---
+layout: default
+title: CM660A_HwTq1Meas_FuncReq
+nav_order: 4
+parent: Component Design
+---
+{% raw %}
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="author" content="Patel, Keyur"/>
+	<meta name="created" content="2015-08-21T17:07:44"/>
+	<meta name="changedby" content="Patel, Keyur"/>
+	<meta name="changed" content="2015-08-21T17:17:04"/>
+	<meta name="AppVersion" content="14.0300"/>
+	<meta name="Company" content="Nexteer Automotive"/>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Calibri"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+	</style>
+	
+</head>
+
+<body>
+<table cellspacing="0" border="0">
+	<colgroup width="83"></colgroup>
+	<colgroup width="544"></colgroup>
+	<colgroup width="116"></colgroup>
+	<colgroup width="39"></colgroup>
+	<colgroup width="59"></colgroup>
+	<colgroup width="90"></colgroup>
+	<colgroup width="103"></colgroup>
+	<colgroup width="147"></colgroup>
+	<tr>
+		<td height="20" align="left" valign=bottom bgcolor="#FFFF00"><b><font color="#000000">ID</font></b></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><b><font color="#000000">Baselined v1.1 and Released</font></b></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><b><font color="#000000">Is Requirement?</font></b></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><b><font color="#000000">.ASIL</font></b></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><b><font color="#000000">.ReqCat</font></b></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><b><font color="#000000">Review Date</font></b></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><b><font color="#000000">Review Action</font></b></td>
+		<td align="left" valign=bottom bgcolor="#FFFF00"><b><font color="#000000">Review Action Status</font></b></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_1</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Purpose</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle><font color="#000000">CM660A_4</font></td>
+		<td align="left" valign=bottom><font color="#000000">Intention of this document to capture requirements for Handwheel Torque 1 Measurement for EA4 onwards.</font></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_2</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Interface Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_5</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Definitions</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_6</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Inputs</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle><font color="#000000">CM660A_9</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">HwTq1Polarity: Count Input signal, -1 indicate reverse Polarity and 1 indicate positive polarity of Handwheel Torque Sensor 1.</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_10</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">HwTq1Phy : Physical input signal, Digital SENT message received from Sensor 1.</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_7</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Outputs</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_11</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">HwTq1: Handwheel Torque Sensor 1 Output signal. </font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle><font color="#000000">CM660A_12</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">HwTq1Qlfr : Enumeration Output Signal, indicates : NO Result, NTC Pass and NTC Fail, from protocol evaluation of Hand Wheel Torque Sensor 1.</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle><font color="#000000">CM660A_13</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">HwTq1RollgCntr: Count output signal, use as instantaneous indicator of fault evaluation pass test or not of hand wheel torque sensor 1.</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle><font color="#000000">CM660A_72</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">RackLimrEotSig1Avl: Boolean output signal, 1 indicate RickLimrCwEotSig1 and RickLimrCcwEotSig1 signals are available and 0 indicates RickLimrCwEotSig1 and RickLimrCcwEotSig1 signals are not available.</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_73</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">RickLimrCwEotSig1: Rack Limiter Clockwise End of travel Signal 1 output signal.</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle><font color="#000000">CM660A_74</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">RickLimrCcwEotSig1: Rack Limiter Counter Clockwise End of travel Signal 1 output signal.</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_8</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Internally Defined Terms</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_3</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_14</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Primary Functional Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_26</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide measured sensor signal output in Engineering Unit in range of ±10 HwNm with 0.00488 resolution.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_27</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall detect protocol error.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_28</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide mechanism to detect any Sensor self internal diagnostic.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_29</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall hold previous known good value in the event of error detected.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_30</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide qualified status of the protocol fault.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_31</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide instantaneous status of the protocol fault.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_32</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide mechanism for correction of Handwheel Torque Output based on sensor polarity.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="80" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_33</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall post Torque data no later than 200us (CBE) from the time torque data being sampled by the sensor (Historically 400us was allocated for total time estimation from the sample torque data to ePWM toggle output using same the sample torque data ).</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_70</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide sensor scratchpad signals, Rack ClockWise End Of Travel and Rack Counter Clock Wise End Of Travel, output in engieering unit in the range of 0 to 800 HwDeg with 2 HwDeg of Resolution.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42236" sdnum="1033;0;M/D/YYYY"><font color="#000000">8/20/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_71</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide Rack ClockWise End Of Travel positive and Rack Counter ClockWise End Of Travel signal negative output signals.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42236" sdnum="1033;0;M/D/YYYY"><font color="#000000">8/20/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_75</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide available signal true, when Rack ClockWise End Of Travel and Rack Counter ClockWise End Of Travel valid signals available.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42236" sdnum="1033;0;M/D/YYYY"><font color="#000000">8/20/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_15</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Hardware Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_34</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide power to the torque sensor within the range of 4.5V (Min) to 5.5V (Max).</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_35</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall require a logic high signal to be higher than 3.0V in magnitude for the read Torque information as input.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_36</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall require a logic Low signal to be lower than 0.1V in magnitude for the Torque Sensor Trigger information as output.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_37</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide an open collector pull high design as an interface to the sensor input.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_16</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Software / Algorithm Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_17</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Special Execution Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_76</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide Rack Limiter End Of Travel output signals once at Ignition cycle.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42236" sdnum="1033;0;M/D/YYYY"><font color="#000000">8/20/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_18</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Software Algorithm Decomoposition</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_19</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Diagnostic Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_20</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Tq Sensor 1 Protocol Fault  (0x075)</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_21</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Required Debounce Strategy</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_38</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall use the ISO based error accumulator strategy for NTC 0x075.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_22</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Requirements to Perform Diagnostic Test Conditions</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_39</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall activate NTC 0x075 in states defined while the operating system is available.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_23</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Test Condition Negative Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_40</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative, when the Sensor SENT frame field &quot;Synchronization and calibration&quot; Tick count is measured outside of 56 ticks ± 20%.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_41</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative, when the  Sensor SENT frame field &quot;Status and Communication&quot; data falls outside the range of 12 &lt;Tick counts &lt;=27.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_42</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative, when the Sensor SENT frame field &quot;Data 0&quot; falls outside the range of 12 &lt;Tick counts &lt;=27.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_43</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative, when the Sensor SENT frame field &quot;Data 1&quot; falls outside the range of 12 &lt;Tick counts &lt;=27.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_44</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative, when the Sensor SENT frame field &quot;Data 2&quot; falls outside the range of 12 &lt;Tick counts &lt;=27.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_45</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative, when the Sensor SENT frame field &quot;CRC&quot; falls outside the range of 12 &lt;Tick counts &lt;=27.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_46</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative,  when the Sensor SENT frame &quot;CRC&quot; field doesn't match with CRC calculated.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_47</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative, when the Sensor misses a new message received (with coherent data in the SENT frame).</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="60" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_48</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative, when the Sensor SENT frame field &quot;Status and Communication&quot; data falls data &gt;12 tick (means indicatation of Temporary or Critical sensor internal diagnostic error).</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_24</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Test Condition Positive Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_49</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide a positive result to the test condition for NTC 0x075 when none of the negative result requirements are satisfied.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">D</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_59</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Tq Sensor 1 Mfg Fault (0x1E1)</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_60</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Required Debounce Strategy</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_61</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall use the  Immediate fault strategy for NTC 0x1E1.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_62</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Requirements to Perform Diagnostic Test Conditions</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_63</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall activate NTC 0x1E1 in states defined while the operating system is available.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_64</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Test Condition Negative Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_65</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function test condition result shall indicate negative, when the handwheel Torque 1 offset trim service not performed.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_66</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Test Condition Positive Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_67</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide a positive result to the test condition for NTC 0x1E1 when none of the negative result requirements are satisfied.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Derived</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle><font color="#000000">CM660A_25</font></td>
+		<td align="left" valign=bottom><b><font color="#000000">Manufacturing Requirements</font></b></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;"><font color="#000000">0</font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+		<td align="center" valign=middle><font color="#000000"><br></font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_50</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide mechanism store HwTq1 Offset trim performed status in persistent storage.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="20" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_51</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall store Auto offset trim to persistent storage.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_52</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide mechanism report the value of HwTq1 Offset Trim stored in persistent storage, on request.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_53</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide mechanism report the value of HwTq1 Offset Trim performed status stored in persistent storage, on request.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_54</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide mechanism clear HwTq1 Offset Trim stored in persistent storage to zero, on request.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_55</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide mechanism manual write HwTq1 Offset Trim stored in persistent storage, on request.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+	<tr>
+		<td height="40" align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">CM660A_56</font></td>
+		<td align="left" valign=bottom bgcolor="#D7E4BD"><font color="#000000">The HwTq1Meas Function shall provide mechanism Auto Learn write HwTq1 Offset Trim stored in persistent storage, on request.</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="1" sdnum="1033;"><font color="#000000">1</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">QM</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Direct</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD" sdval="42185" sdnum="1033;0;M/D/YYYY"><font color="#000000">6/30/2015</font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000"><br></font></td>
+		<td align="center" valign=middle bgcolor="#D7E4BD"><font color="#000000">Closed</font></td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>
+
+{% endraw %}
